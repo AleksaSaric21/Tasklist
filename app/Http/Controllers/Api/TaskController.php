@@ -37,8 +37,7 @@ class TaskController extends ApiController{
     public function insertTask(Request $request)
     {
         $data = [
-//            'user_id' => auth()->user()->id,
-            'user_id' => 1,
+            'user_id' => auth()->user()->id,
             'name' => $request->name,
         ];
 
